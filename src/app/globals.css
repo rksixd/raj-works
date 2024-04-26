@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+*,
+*:before,
+*:after {
+  @apply cursor-default;
+}
+
+a,
+button {
+  @apply cursor-pointer;
+}
+
+body {
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+ul {
+  list-style: inside;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+
+  .featureImg {
+    filter: grayscale(1);
+    transition: 0.5s ease;
+  }
+
+  .featureImg:hover {
+    filter: none;
+    scale: 1.05;
+    
+  }
+
+  /* Css by Raj */
+  .Questions-list li:hover a p {
+    color: #ec6f2f;
+    text-decoration: underline;
+  }
+
+  .side-questions li:hover a p {
+    color: #ec6f2f;
+  }
+
+  .side-questions a p {
+    opacity: 0.7;
+  }
+
+  p.answers-heading {
+    font-family: '__Poppins_dee427';
+    text-transform: none;
+    font-weight: 500;
+  }
+  p.answers-para {
+    font-weight: 400;
+    opacity: 0.7;
+}
+.desktop-menu{
+  list-style: none;
+}
+
+.playstore-btn{
+  transition: 1s ease-in-out;
+}
+.playstore-btn:hover {
+  box-shadow: 0px 0px 80px -37px #ec6d2d7d;
+  
+}
+.fair-play-head{
+  font-family: poppins;
+  font-size: 24px;
+}
+
+.fair-play-list{
+  list-style: none;
+}
+
+.fair-play-list li div div p{
+  font-family: poppins;
+  font-size: 20px;
+}
+
+
+
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+
+@layer components {
+
+
+  .subsection {
+
+    @apply flex flex-col gap-5 mb-[20px]
+  }
+
+  .subsectionHeading {
+    @apply font-bold underline
+  }
+
+
+  .subsectionText {
+    @apply leading-[25px]
+  }
+
+}
