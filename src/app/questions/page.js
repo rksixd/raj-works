@@ -40,7 +40,7 @@ console.log(filterItems , "pp");
 
   return (
     <div className='px-[24px] lg:px-[100px]'>
-        <div className='w-full flex justify-center mt50 items-center'>
+        <div className='w-full flex justify-center items-center'>
         <Heading text={"what can we help you with"}></Heading>        
         </div>
 
